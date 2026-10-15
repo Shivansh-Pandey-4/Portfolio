@@ -5,7 +5,7 @@ import CopyEmail from "../common/CopyEmail"
 export default function Hero() {
 
     return (
-        <div className="py-5 mt-12">
+        <div className="py-5 mt-10">
             <div className="flex items-center gap-x-5 md:gap-x-10">
 
                 <Image
@@ -17,7 +17,7 @@ export default function Hero() {
                 />
 
                 <div className="flex flex-col gap-x-2 gap-y-2 md:gap-y-0">
-                    <h1 className="text-xl md:text-2xl font-bold">
+                    <h1 className="text-xl md:text-3xl font-bold">
                         <span className="dark:text-white text-black">Shivansh Pandey</span>
                     </h1>
                     <div className="flex flex-wrap items-center gap-x-1.5 whitespace-pre-wrap text-neutral-500 text-sm md:text-lg">
