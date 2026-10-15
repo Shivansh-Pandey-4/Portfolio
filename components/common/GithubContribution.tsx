@@ -20,6 +20,7 @@ export default function GithubContribution() {
                         showHeader={true}
                         showFooter={true}
                         showTooltips={true}
+                        showThumbnail={false}
                     // className="!w-[760px] !min-w-[760px] !max-w-none"
                     />
                 </div>
