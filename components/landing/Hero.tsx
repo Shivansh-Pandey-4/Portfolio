@@ -5,7 +5,7 @@ import CopyEmail from "../common/CopyEmail"
 export default function Hero() {
 
     return (
-        <div className="py-5 mt-10">
+        <div id="home" className="py-5 mt-5 scroll-my-20">
             <div className="flex items-center gap-x-5 md:gap-x-10">
 
                 <Image

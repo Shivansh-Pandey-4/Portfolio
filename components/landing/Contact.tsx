@@ -1,7 +1,9 @@
 import { ContactLists } from "@/lib/ContactList"
 import { Button } from "../ui/button";
+import HomeLink from "../common/HomeLink";
+import Link from "next/link";
 
-const Navigate = ["Home", "Work", "Blog", "Resume"]
+const Navigate = ["Home", "Work", "Blogs", "Resume"] as const;
 
 export default function Contact() {
 
@@ -9,13 +11,20 @@ export default function Contact() {
         <div className="mt-10 p-5 grid grid-cols-1 md:grid-cols-2 gap-y-5 container mx-auto max-w-3xl">
             <div>
                 <h1 className="text-black dark:text-gray-200 font-semibold text-xl">Navigate</h1>
-                <div className="py-3 flex items-center flex-wrap gap-x-3 dark:text-gray-500 text-gray-600">
+                <ul className="py-3 flex items-center flex-wrap gap-x-3 dark:text-gray-500 text-gray-600">
                     {
-                        Navigate.map((item, index) => (
-                            <h2 className="cursor-pointer dark:hover:text-gray-300 hover:text-gray-900" key={index}>{item}</h2>
-                        ))
+                        Navigate.map((item, index) => {
+                            return (item === "Home" ? <HomeLink key={index} /> :
+                                <li className="cursor-pointer dark:hover:text-gray-300 hover:text-gray-900" key={index}>
+                                    <Link href={`/${item.toLowerCase()}`}>
+                                        {item}
+                                    </Link>
+                                </li>
+                            )
+                        }
+                        )
                     }
-                </div>
+                </ul>
             </div>
             <div>
                 <h1 className="text-black dark:text-gray-200 font-semibold text-xl">Connect</h1>
