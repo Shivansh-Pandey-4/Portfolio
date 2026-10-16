@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      <div className="px-4 mx-auto max-w-3xl pt-8 pb-12 border">
+      <div className="px-4 mx-auto max-w-3xl w-full pt-8 pb-12 border-x">
         <Header />
         <Hero />
         <About />

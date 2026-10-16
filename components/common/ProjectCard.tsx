@@ -15,12 +15,13 @@ export default function ProjectCard(props: IProps) {
 
 
     return (
-        <div className="w-full border border-gray-300 rounded-md dark:border-gray-700 p-2 shadow">
+        <div className="flex h-full w-full flex-col rounded-md border border-gray-300 p-3 shadow dark:border-gray-700">
             <Image
                 src={imageSrc ? imageSrc : "/vercel.svg"}
                 alt="collab canvas project image"
-                width={50}
-                height={50}
+                width={500}
+                height={200}
+                className="h-40 w-full rounded-md object-cover"
             />
 
 
@@ -30,13 +31,13 @@ export default function ProjectCard(props: IProps) {
             <div className="mt-3 flex items-center flex-wrap gap-0.5">
                 {
                     techStack.map((item) => (
-                        <Button className="px-1" variant={"secondary"} size={"sm"} key={item} >
+                        <Button className="px-1" variant={"secondary"} size={"xs"} key={item} >
                             {item}
                         </Button>
                     ))
                 }
             </div>
-            <div className="flex items-center flex-wrap mt-3 gap-x-2">
+            <div className="mt-auto flex flex-wrap items-center gap-2 pt-4">
                 <Link href={liveLink}>
                     <Button variant={"opposite"} className="px-2" size={"sm"}>
                         <Globe />

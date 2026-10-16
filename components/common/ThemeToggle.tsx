@@ -28,7 +28,7 @@ export function ThemeToggle() {
                 <span className="sr-only">Toggle theme</span>
             </Button>
 
-            <p className="invisible absolute left-1/2 top-full mt-2 -translate-x-1/2 whitespace-nowrap rounded-md bg-black px-4 py-1 text-xs capitalize text-white opacity-0 transition-opacity duration-200 delay-200 group-hover:visible group-hover:opacity-100 dark:bg-gray-100 dark:text-gray-800">
+            <p className="invisible absolute right-0 top-full z-50 mt-2 whitespace-nowrap rounded-md bg-black px-4 py-1.5 text-xs text-white opacity-0 transition-opacity duration-200 delay-200 group-hover:visible group-hover:opacity-100 before:content-[''] before:absolute before:-top-1.5 before:right-2 before:border-x-[6px] before:border-x-transparent before:border-b-[6px] before:border-b-black dark:bg-gray-100 dark:text-gray-800 dark:before:border-b-gray-100">
                 Toggle Mode
             </p>
         </>

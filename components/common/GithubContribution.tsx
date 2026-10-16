@@ -10,10 +10,9 @@ export default function GithubContribution() {
     const { theme } = useTheme();
 
     return (
-        <section className="w-full min-w-0">
-
-            <div className="w-full min-w-0 overflow-x-auto pb-4">
-                <div className="w-full min-w-3xl max-w-none">
+        <section className="w-full min-w-0 max-w-full">
+            <div className="w-full min-w-0 max-w-full overflow-x-auto pb-4">
+                <div className="min-w-[700px]">
                     <GitHubContributionGraph
                         username="Shivansh-Pandey-4"
                         theme={theme === "dark" ? "midnight" : "glacier"}
@@ -21,7 +20,6 @@ export default function GithubContribution() {
                         showFooter={true}
                         showTooltips={true}
                         showThumbnail={false}
-                    // className="!w-[760px] !min-w-[760px] !max-w-none"
                     />
                 </div>
             </div>
