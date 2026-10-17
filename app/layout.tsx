@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/common/ThemeProvider";
 import Header from "@/components/landing/Header";
 import Contact from "@/components/landing/Contact";
 import Footer from "@/components/landing/Footer";
+import BottomBlur from "@/components/common/BottomBlur";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,6 +42,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <Contact />
             <Footer />
           </div>
+          <BottomBlur />
         </ThemeProvider>
       </body>
     </html>
